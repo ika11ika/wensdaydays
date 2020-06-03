@@ -6,7 +6,7 @@ app.config['JSON_AS_ASCII'] = False
 
 
 @app.route('/')
-@app.route('\index')
+@app.route('/index')
 def main():
 	now = datetime.utcnow() + timedelta(hours = 3)
 	weekend = datetime.strptime('2020-06-03 23:59:59', '%Y-%m-%d %H:%M:%S')
